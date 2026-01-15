@@ -1,0 +1,20 @@
+# {{ title }}
+
+## The Problem
+{{ problem }}
+
+## Decision Matrix
+
+| Option | Pros | Cons | Best For |
+|--------|------|------|---------|
+{% for row in matrix %}
+| {{ row.option }} | {{ row.pros }} | {{ row.cons }} | {{ row.best }} |
+{% endfor %}
+
+## Recommendation
+{{ recommendation }}
+
+## Sources
+{% for s in sources %}
+- {{ s }}
+{% endfor %}
